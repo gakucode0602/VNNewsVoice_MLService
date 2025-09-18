@@ -25,7 +25,6 @@ from app.core.config import settings
 from huggingface_hub import InferenceClient
 
 class ArticleSummarizationService:
-    # 🔧 Lazy loading - chỉ load khi cần
     _tokenizer = None
     _model = None
     _device = None
